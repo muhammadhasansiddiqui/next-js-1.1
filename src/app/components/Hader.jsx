@@ -7,13 +7,23 @@ export function Header() {
   const pathname = usePathname()
  
   return (
-    <nav>
-      <Link className={`link ${pathname === '/' ? 'active' : ''}`} href="/">
+    <nav 
+    className= "bg-yellow-100 h-20 flex justify-around p-8 font-extrabold font-serif"
+    
+
+    >
+      <Link className={`link ${pathname === '/' ? 'active underline' : ''}`} href="/">
         Home
+      </Link>
+      <Link
+        className={`link ${pathname === '/dashborad' ? 'active underline' : ''}`}
+        href="/dashborad"
+      >
+        DashBorad
       </Link>
  
       <Link
-        className={`link ${pathname === '/about' ? 'active' : ''}`}
+        className={`link ${pathname === '/about' ? 'active underline' : ''}`}
         href="/about"
       >
         About
