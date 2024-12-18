@@ -1,6 +1,7 @@
 import Link from 'next/link';
 
 export default function DashboardLayout({ children }) {
+    console.log("🚀 ~ DashboardLayout ~ children:", children);
     return (
         <section className="min-h-screen flex">
             <div className="w-1/3 bg-gray-900 flex flex-col items-center justify-center">
