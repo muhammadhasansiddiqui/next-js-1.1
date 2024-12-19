@@ -6,8 +6,9 @@ export default function Home() {
       <h1   
         className="text-3xl font-bold text-center p-6 sm:text-5xl bg-yellow-200 rounded-xl shadow-md" 
       >
-        Dashboard
+        Dashboard :)
       </h1>
     </div>
   );
 }
+
