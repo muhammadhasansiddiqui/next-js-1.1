@@ -40,12 +40,12 @@ export default function Blogs() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-red-800 text-white">
       {/* Header Section */}
-      <h1 className="text-4xl font-bold bg-black py-4 px-6 rounded-lg shadow-lg mb-6">
+      <h1 className="text-4xl font-bold bg-red-800 py-4 px-6 text-red-800 rounded-lg shadow-lg mb-6">
         All Blogs
       </h1>
 
       {/* Blogs Section */}
-      <div className="container mx-auto p-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="container mx-auto p-4 py-3 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {blogs.map((data) => (
           <div
             key={data.id}
